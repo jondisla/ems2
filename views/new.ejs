@@ -1,0 +1,32 @@
+<!-- @format -->
+<%- include('./include/_header') %> <%- include('./include/_navbar') %>
+
+<div class="container">
+  <h2 class="text-center">Add Record</h2>
+  <form action="/api/users" method="POST">
+    <div class="form-group">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="fname"
+        id="fname"
+        aria-describedby="helpId"
+        placeholder="Jon"
+      />
+    </div>
+    <div class="form-group">
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="lname"
+        id="lname"
+        aria-describedby="helpId"
+        placeholder="Doe"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<%- include('./include/_footer') %>
