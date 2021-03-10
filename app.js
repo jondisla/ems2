@@ -27,7 +27,9 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use("/", require("./server/routes/router"));
 
 //load assets
+app.use(express.static(__dirname + "/assets"));
 app.use("/css", express.static(path.resolve(__dirname, "assets/css")));
+app.use("/img", express.static(path.resolve(__dirname, "assets/img")));
 
 //set view engine
 app.set("view engine", "ejs");

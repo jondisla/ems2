@@ -8,6 +8,7 @@ const controller = require("../controller/controller");
 //Index
 route.get("/", services.homeRoutes);
 route.get("/new", services.new);
+route.get("/list", services.list);
 
 //API
 route.post("/api/users", controller.create);

@@ -1,9 +1,13 @@
 <!-- @format -->
-
+<%- include('./include/_header') %> 
+<%- include('./include/_navbar') %>
 <div class="container">
-  <a href="/new" type="button" class="btn btn-primary">
-    <i class="fa fa-pencil" aria-hidden="true"> Add New</i></a
-  >
+  <center>
+    <h1>Current Employees</h1>
+    <a href="/new" type="button" class="btn btn-primary add-new">
+      <i class="fa fa-pencil" aria-hidden="true"> Add New</i></a
+    >
+  </center>
   <table class="table">
     <thead>
       <tr>
@@ -21,3 +25,4 @@
     </tbody>
   </table>
 </div>
+<%- include('./include/_footer') %>
